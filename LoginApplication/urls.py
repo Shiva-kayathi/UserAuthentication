@@ -20,4 +20,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^app/', include('login.urls')),
     url('', include('social_django.urls', namespace='social')),  # <--
+    url(r'^payments/', include('djstripe.urls', namespace="djstripe")),
 ]

@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-</head>
-<body>
- <div>
+{% extends 'login/base.html' %}
+{% block title %} Login {% endblock %}
+{% block body %}
+<div>
      <h3> Login </h3>
 
      <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
@@ -28,6 +24,5 @@
     <a href="{% url 'social:begin' 'google-oauth2'%}">Login with Google</a><br>
     <a href="{% url 'social:begin' 'linkedin-oauth2'%}">Login with linkedin</a><br>
  </div>
+{% endblock %}
 
-</body>
-</html>

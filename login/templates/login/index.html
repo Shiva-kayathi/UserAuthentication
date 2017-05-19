@@ -1,11 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<h1> This is a Login App home page </h1>
+{% extends 'login/base.html' %}
+{% block title %} Home Page {% endblock %}
+{% block body %}
+
+<!-- loads the path to your static files -->
+{% load staticfiles %}
+
+<h3> This is a Login App home page </h3>
 <a href="{% url 'login:logout'%}"> Logout </a>
-</body>
-</html>
+
+
+
+
+{% endblock %}
